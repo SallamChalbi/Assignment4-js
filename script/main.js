@@ -109,11 +109,11 @@ function login() {
         if (signUpArray[i].email.toLowerCase() == email.toLowerCase() && signUpArray[i].password.toLowerCase() == password.toLowerCase()) {
             localStorage.setItem('sessionUsername', signUpArray[i].name)
             if (baseURL == '/') {
-                location.replace('https://sallamchalbi.github.io/assignment4-js/welcome.html')
-                //console.log('https://sallamchalbi.github.io/assignment4-js/welcome.html');
+                location.replace('https://' + location.hostname + '/welcome.html')
+
             } else {
-                location.replace('https://sallamchalbi.github.io/assignment4-js/welcome.html')
-                console.log('https://sallamchalbi.github.io/assignment4-js/welcome.html');
+                location.replace(baseURL + '/welcome.html')
+
             }
         } else {
             document.getElementById('incorrect').innerHTML = '<span class="p-2 text-danger">incorrect email or password</span>'

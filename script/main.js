@@ -110,10 +110,10 @@ function login() {
             localStorage.setItem('sessionUsername', signUpArray[i].name)
             if (baseURL == '/') {
                 location.replace('https://' + location.hostname + '/welcome.html')
-
+                console.log('https://' + location.hostname + '/welcome.html');
             } else {
                 location.replace(baseURL + '/welcome.html')
-
+                console.log(baseURL + '/welcome.html');
             }
         } else {
             document.getElementById('incorrect').innerHTML = '<span class="p-2 text-danger">incorrect email or password</span>'

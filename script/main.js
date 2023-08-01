@@ -109,8 +109,8 @@ function login() {
         if (signUpArray[i].email.toLowerCase() == email.toLowerCase() && signUpArray[i].password.toLowerCase() == password.toLowerCase()) {
             localStorage.setItem('sessionUsername', signUpArray[i].name)
             if (baseURL == '/') {
-                location.replace('https://' + location.hostname + '/welcome.html')
-                console.log('https://' + location.hostname + '/welcome.html');
+                location.replace('https://sallamchalbi.github.io' + location.hostname + '/welcome.html')
+                console.log('https://sallamchalbi.github.io' + location.hostname + '/welcome.html');
             } else {
                 location.replace(baseURL + '/welcome.html')
                 console.log(baseURL + '/welcome.html');
